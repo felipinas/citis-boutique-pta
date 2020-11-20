@@ -1,0 +1,271 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    font-family: 'Playfair Display', serif;
+}
+:root {
+    --rose:#D6C2B7;
+    --cinza: #E7E9E6;
+    --preto: #35363a;
+    --bege: #b7ab9d; 
+}
+
+/*header*/
+
+.page-header {
+    height: 100vh;
+
+    background-image: url("images/main.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.page-nav {
+    padding: 26px 31px 0px 31px;
+
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    width: 120px
+}
+.menu-button {
+    width: 34px;
+    height: 29px;
+
+    display: flex;
+    align-items: center;
+
+    cursor: pointer;
+}
+.burger {
+    display: block;
+    background: var(--cinza);
+    width: 34px;
+    height: 4px;
+    position: relative;
+
+    transition: 0.5s ease-in-out;
+
+    z-index: 9999;
+}
+.burger:before, 
+.burger:after {
+    background: var(--cinza);
+    content: "";
+    display: block;
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    transition: 0.5s ease-in-out;
+}
+.burger:before {
+    top: -12px;
+}
+.burger:after {
+    bottom: -12px;
+}
+#menu-burger {
+    display: none;
+}
+
+#menu-burger:checked ~ label .burger {
+    transform: rotate(45deg);
+    position: fixed;
+}
+#menu-burger:checked ~ label .burger:before {
+    transform: rotate(90deg);
+    top: 0px;
+}
+#menu-burger:checked ~ label .burger:after {
+    transform: rotate(90deg);
+    bottom: 0px;
+}
+
+#menu-burger:checked ~ .menu {
+    transform: translateX(0);
+}
+#menu-burger:checked ~ .menu-button {
+    position: fixed;
+} 
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    z-index: 1000;
+
+    background-color: var(--preto);
+
+    transform: translateX(100%);
+    transition: 0.6s;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu ul {
+    list-style: none;
+    font-size: 35px;
+
+    text-align: center;
+}
+.menu li {
+    margin-bottom: 40px
+}
+.menu li a {
+    text-decoration: none;
+    color: var(--bege);
+}
+.vert-row {
+    display: none;
+}
+
+.main-title {
+    position: absolute;
+    bottom: 66px;
+    right: 31px;
+
+    color: var(--cinza);
+    font-weight: 400;
+}
+
+/*main*/
+
+.main-content {
+    padding-top: 76px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: var(--preto);
+}
+.products {
+    margin-bottom: 36px;
+}
+.second-title {
+    color: var(--bege);
+    margin-bottom: 31px;
+
+    font-size: 36px;
+}
+.box-product {
+    width: 60vw;
+    height: 44vh;
+    position: relative;
+    margin-bottom: 65px;
+
+    display: flex;
+    justify-content: center;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.product-title {
+    font-weight: 400;
+    font-size: 21px;
+
+    color: var(--preto);
+
+    margin-top: 12px;
+}
+.buy-button {
+    width: 45vw;
+    height: 52px;
+    bottom: -26px;
+    position: absolute;
+
+    font-family: 'Playfair Display', serif;
+    font-size: 21px;
+
+    color: var(--preto);
+    background-color: var(--rose);
+    border: 2px solid var(--bege);
+    outline: none;
+    
+    transition: 0.2s;
+    cursor: pointer;
+}
+.buy-button:hover {
+    transform: scale(1.02);
+}
+.ring {
+    background-image: url("images/ring.png")
+}
+.watch {
+    background-image: url("images/watch.png")
+}
+.collar {
+    background-image: url("images/collar.png")
+}
+
+/*footer*/
+
+.page-footer {
+    padding-top: 46px;
+    background-color: var(--bege);
+}
+.main-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo-footer {
+    width: 210px;
+    
+    margin-bottom: 60px;
+}
+.contact-list {
+    list-style: none;
+
+    margin-bottom: 50px;
+}
+.contact-list li {
+    margin-bottom: 18px;
+
+    font-size: 20px;
+
+    transition: 0.4s;
+}
+.contact-list li:hover {
+    opacity: 0.6;
+}
+.contact-list li a {
+    display: flex;
+    align-items: center;
+
+    text-decoration: none;
+    color: var(--preto)
+}
+.icon {
+    width: 20px;
+
+    margin-right: 12px;
+}
+.made-by {
+    height: 68px;
+
+    background-color: var(--cinza);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 20px;
+}
+
+.made-by span {
+    font-weight: 700;
+}
+
+.made-by span:hover {
+    color: #03ef78;
+}

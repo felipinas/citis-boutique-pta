@@ -1,0 +1,125 @@
+@media (min-width: 800px) {
+
+    .page-nav {
+        padding: 75px 171px 0px 171px
+    }
+    .logo {
+        width: 15vw;
+    }
+    .menu-button {
+        display: none;
+    }
+    .menu {
+        transform: translate(0);
+        background: none;
+
+        width: auto;
+        height: auto;
+        position: static;
+    }
+    .menu ul {
+        display: flex;
+    }
+    .menu ul li {
+        margin-left: 82px;
+        margin-bottom: 0px;
+        color: var(--cinza);
+
+        font-size: 2vw;
+
+        cursor: pointer;
+
+        transition: 0.4s;
+    }
+    .menu ul li:hover {
+        transform: scale(1.06);
+    }
+    .page-nav:hover ~ .vert-row {
+        width: calc(40vw + 80px);
+    }
+    .vert-row {
+        background-color: var(--cinza);
+        width: 40vw;
+        height: 2px;
+        float: right;
+        display: block;
+
+        transition: 0.4s;
+    }
+    .main-title {
+        font-size: 5vw;
+        text-align: right;
+
+        bottom: 66px;
+        right: 171px;
+    }
+
+    .main-content {
+        padding-top: 140px;
+    }
+    .products {
+        display: grid;
+        grid-template-columns: 23vw 23vw 23vw;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "produtos produtos produtos"
+        "ring watch collar";
+        grid-column-gap: 48px;
+
+        margin-bottom: 220px;
+    }
+    .second-title {
+        text-align: center;
+        grid-area: produtos;
+
+        font-size: 5vw;
+
+        margin-bottom: 66px;
+    }
+    .ring{
+        grid-area: ring;
+    }
+    .watch {
+        grid-area: watch;
+    }
+    .collar {
+        grid-area: collar;
+    }
+    .box-product {
+        width: 23vw;
+        height: 55vh;
+
+        margin-bottom: 0px;
+    }
+    .product-title {
+        font-size: 2vw;
+        margin-top: 2vh;
+    }
+    .buy-button {
+        width: 16vw;
+        height: 9vh;
+
+        font-size: 2vw;
+
+        bottom: calc(-9vh/2)
+    }
+
+    .page-footer {
+        padding-top: 56px;
+    }
+    .main-footer {
+        flex-direction: row;
+        justify-content: space-between;
+
+        margin: 0px 160px 0px 160px;
+    }
+    .logo-footer {
+        width: 15vw;
+    }
+    .contact-list li {
+        font-size: 2vw;
+    }
+    .icon {
+        width: 1.5vw;
+    }
+}
