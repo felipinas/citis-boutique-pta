@@ -1,0 +1,13 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    font-family: 'Playfair Display', serif;
+}
+:root {
+    --rose:#D6C2B7;
+    --cinza: #E7E9E6;
+    --preto: #35363a;
+    --bege: #b7ab9d; 
+}

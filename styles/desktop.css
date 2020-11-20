@@ -23,13 +23,15 @@
     .menu ul li {
         margin-left: 82px;
         margin-bottom: 0px;
-        color: var(--cinza);
 
         font-size: 2vw;
 
         cursor: pointer;
 
         transition: 0.4s;
+    }
+    .menu ul li a {
+    color: var(--cinza);
     }
     .menu ul li:hover {
         transform: scale(1.06);
@@ -40,7 +42,7 @@
     .vert-row {
         background-color: var(--cinza);
         width: 40vw;
-        height: 2px;
+        height: 1px;
         float: right;
         display: block;
 

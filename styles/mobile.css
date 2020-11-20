@@ -1,23 +1,9 @@
-* {
-    padding: 0px;
-    margin: 0px;
-}
-body {
-    font-family: 'Playfair Display', serif;
-}
-:root {
-    --rose:#D6C2B7;
-    --cinza: #E7E9E6;
-    --preto: #35363a;
-    --bege: #b7ab9d; 
-}
-
 /*header*/
 
 .page-header {
     height: 100vh;
 
-    background-image: url("images/main.png");
+    background-image: url("../images/main.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -198,13 +184,13 @@ body {
     transform: scale(1.02);
 }
 .ring {
-    background-image: url("images/ring.png")
+    background-image: url("../images/ring.png")
 }
 .watch {
-    background-image: url("images/watch.png")
+    background-image: url("../images/watch.png")
 }
 .collar {
-    background-image: url("images/collar.png")
+    background-image: url("../images/collar.png")
 }
 
 /*footer*/
